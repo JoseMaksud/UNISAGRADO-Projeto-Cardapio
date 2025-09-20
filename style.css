@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-bege: #F5EBDC;
+    --cor-laranja: #FF8233;
+    --cor-marrom: #502314;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-header{
+    position: absolute;
+}
+
+.logo-header img{
+    width: 100%;
+    max-width: 13rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 11rem;
+    padding: 0rem 3rem 0rem 3rem;
+    background-color: var(--cor-bege);
+}
+
+.social-media{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.social-media img{
+    width: 2rem;
+}
+
+.login p{
+    display: none;
+}
+
+.login-mobile img{
+    width: 2.5rem;
+}
+
+.colorbar{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--cor-laranja);
+}
+
+/* main{
+   
+} */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-marrom);
+    gap: 10px;
+    padding: 15px;
+}
+
+footer img{
+    width: 100%;
+    height: auto;
+    max-width: 6rem;
+}
+
+.legal-line p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--cor-bege);
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+@media (min-width: 768px){
+
+.login-desk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-marrom);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login p{
+    display: block;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--cor-laranja);
+}
+
+.login-mobile{
+    display: none;
+}
+
+}
