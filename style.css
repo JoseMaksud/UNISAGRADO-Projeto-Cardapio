@@ -150,6 +150,21 @@ header{
     margin: 0 auto;
 }
 
+.imgCard{
+    min-width: 200px;
+    min-height: 150px;
+    max-width:250px;
+    overflow: hidden; 
+}
+
+.imgCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
 .informationsCard {
     display: flex;
     flex-direction: column;
