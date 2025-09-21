@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardapio online</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -28,7 +29,49 @@
         </div>
         <div class="colorbar"></div>
     </header>
-    <main></main>
+
+    <main>
+        <section class="carousel-container" aria-roledescription="carrossel">
+        
+            <button class="carousel-btn prev-btn" aria-label="Slide anterior">
+                <span class="material-icons">chevron_left</span>
+            </button>
+    
+            <div class="carousel-slider">
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/desktop1.jpg">
+                        <img src="img/mobile1.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/desktop2.jpg">
+                        <img src="img/mobile2.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/desktop3.jpg">
+                        <img src="img/mobile3.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/desktop4.jpg">
+                        <img src="img/mobile4.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+    
+            <button class="carousel-btn next-btn" aria-label="Próximo slide">
+                <span class="material-icons">chevron_right</span>
+            </button>
+    
+            <div class="carousel-dots"></div>
+        </section>
+        </main>
+    
     <footer>
         <div class="logo-footer">
             <img src="img/BK-logo02.svg" alt="">
@@ -37,5 +80,7 @@
             <p>Sujeito à disponibilidade em estoque. Imagens meramente ilustrativas. TM & © 2025 Burger King Company LLC.<br>Usado sob licença. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
