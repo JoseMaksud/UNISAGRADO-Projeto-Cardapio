@@ -75,3 +75,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     init();
 });
+
+const filterButtons = document.querySelectorAll(".filterButtons button");
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        filterButtons.forEach(btn => btn.classList.remove("btnActive"));
+        button.classList.add("btnActive");
+    });
+});

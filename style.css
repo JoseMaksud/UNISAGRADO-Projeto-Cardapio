@@ -16,7 +16,7 @@
 html, body{
     width: 100%;
     height: 100%;
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px = 1rem */
 }
 
 header{
@@ -70,9 +70,138 @@ header{
     background-color: var(--cor-laranja);
 }
 
-/* main{
-   
-} */
+.cardapio {
+    width: 100%;
+    margin-block: 2.9rem;
+}
+
+.cardapioFilter {
+    gap: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.cardapioFilter h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--cor-marrom);
+    font-weight: bold;
+}
+
+.filterButtons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterButtons button {
+    padding: .8rem 1.5rem;
+    border-radius: 1.6rem;
+    background-color: #F5F5F4;
+    border: .1rem solid black;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all .5s ease; 
+}
+
+.btnActive {
+    color: white;
+    background-color: #FF8601 !important;
+}
+
+.filterButtons button:hover,
+.filterButtons button:focus {
+    background-color: #d1d1d1;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,0.08);
+}
+
+.cardapioItens {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.category {
+    font-size: 3rem;
+    color: var(--cor-marrom);
+    font-weight: bold;   
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cardapioCard {
+    background-color: var(--cor-bege);
+    color: #606266;
+    width: 30rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+    margin: 0 auto;
+}
+
+.informationsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.titleCard {
+   font-size: 1.6rem;
+   font-weight: 800;
+} 
+
+.descriptionCard {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.descriptionImgCard {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.footerCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1.3rem;
+}
+
+.priceCard {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.btnCard {
+    text-transform: uppercase;
+    background-color: var(--cor-marrom);
+    cursor: pointer;
+    color: #FF8601;
+    border-radius: 1rem;
+    padding: .9rem 1.2rem;
+    font-weight: 800;
+}
+
+.btnCard:hover,
+.btnCard:focus {
+    background-color: #FF8601;
+    color: var(--cor-marrom);
+    transition: all .5s ease;
+}
 
 footer{
     display: flex;
@@ -225,5 +354,77 @@ footer img{
     .carousel-container {
         aspect-ratio: 1600 / 700;
         max-height: 70rem; 
+    }
+}
+
+@media (min-width: 600px) {
+    .cardapioFilter {
+        gap: 2.4rem;
+    }
+
+    .cardapioFilter h2 {
+        font-size: 3.6rem;
+    }
+
+    .filterButtons {
+        gap: 1.6rem;
+    }
+
+    .cardapioItens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
+
+    .category {
+        font-size: 3.6rem;
+        text-align: left;
+        text-indent: 2rem;
+        margin-bottom: 3.4rem;
+    }
+
+}   
+
+@media (min-width: 900px) {
+    .cardapioFilter {
+        gap: 2.8rem; 
+    }
+
+    .cardapioFilter h2 {
+        font-size: 4.8rem; 
+    }
+
+    .filterButtons {
+        flex-wrap: nowrap;
+    }
+
+    .category {
+        font-size: 4.8rem;
+        margin-bottom: 5.6rem;
+    }
+
+    .cardapioCard {
+        width: 48rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informationsCard {
+        margin-top: 1.3rem;
+    }
+
+    .titleCard,
+    .descriptionCard,
+    .descriptionImgCard {
+        text-align: left;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 1100px)  {
+    .cardapioCard {
+        width: 65rem;
     }
 }
